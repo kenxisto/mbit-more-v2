@@ -7,7 +7,8 @@ import translations from './translations.json';
 
 import {MicrobitMore} from './microbit-more';
 
-let formatMessage = messageData => messageData.defaultMessage;
+//let formatMessage = messageData => messageData.defaultMessage;
+const formatMessage = require('format-message');
 
 /**
  * Setup format-message for this extension.
@@ -17,7 +18,7 @@ const setupTranslations = () => {
     if (localeSetup && localeSetup.translations[localeSetup.locale]) {
         Object.assign(
             localeSetup.translations[localeSetup.locale],
-            translations[localeSetup.locale]
+            translations[localeSetup.locale]*
         );
     }
 };
