@@ -7,7 +7,7 @@ import translations from './translations.json';
 
 import {MicrobitMore} from './microbit-more';
 
-let formatMessage = messageData => messageData.defaultMessage;
+//let formatMessage = messageData => messageData.defaultMessage;
 
 /**
  * Setup format-message for this extension.
